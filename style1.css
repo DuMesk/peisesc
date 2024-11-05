@@ -1,0 +1,15 @@
+#imagem-cell {
+    text-align: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.vermama{
+    color: red;
+    background-color: yellow;
+}
+
+.verm{
+    color: red;
+    background-color: none;
+}
