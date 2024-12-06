@@ -1,0 +1,60 @@
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header img {
+        max-width: 120px;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    td[width] {
+        width: 100% !important;
+    }
+
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    #srm1{
+        padding: 0px;
+    }
+
+    #srm1 p{
+        font-size: 9pt;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .pagina {
+        padding: 5px;
+    }
+
+    header img {
+        max-width: 100px;
+    }
+
+    input, select, textarea {
+        font-size: 16px;
+    }
+
+    #srm1{
+        padding: 0px;
+    }
+
+    #srm1 p{
+        font-size: 9pt;
+    }
+}
+
