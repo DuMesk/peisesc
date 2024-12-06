@@ -1,0 +1,65 @@
+/* Estilos específicos para impressão */
+@media print {
+    @page {
+        size: A4;
+        margin: 3cm 2cm 2cm 3cm; /* Margens ABNT */
+    }
+
+    body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12pt;
+        line-height: 1.5;
+        background: #fff;
+        color: #000;
+    }
+
+    /* Remove elementos desnecessários na impressão */
+    #print-button {
+        display: none;
+    }
+
+    /* Ajustes de cabeçalho */
+    header {
+        margin-bottom: 2cm;
+    }
+
+    header img {
+        max-width: 100px;
+    }
+
+    /* Ajustes de tabelas */
+    table {
+        page-break-inside: avoid;
+        border-collapse: collapse;
+        width: 100%;
+        margin: 1cm 0;
+    }
+
+    td {
+        padding: 0.5cm;
+        border: 1px solid #000;
+    }
+
+    /* Ajustes de texto */
+    h1 {
+        font-size: 14pt;
+        font-weight: bold;
+        margin: 1cm 0;
+    }
+
+    h2, h3 {
+        font-size: 12pt;
+        font-weight: bold;
+        margin: 0.5cm 0;
+    }
+
+    p {
+        text-align: justify;
+        margin: 0.5cm 0;
+    }
+
+    /* Quebras de página automáticas */
+    .new-page {
+        page-break-before: always;
+    }
+}
