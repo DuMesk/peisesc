@@ -1,16 +1,7 @@
-body {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Ocupa toda a altura da janela */
-    margin: 10px; /* Remove margens padrão do body */
-    background-color: #f0f0f0; /* Cor de fundo da página */
-}
-.pagina {
-    width: 21cm; /* Largura de uma folha A4 */
-    height: 29.7cm; /* Altura de uma folha A4 */
-    margin: 1.5cm; /* Margens de 1,5 cm */
-    background-color: white; /* Cor de fundo da "folha" */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para dar efeito de elevação */
-}
-
+@import 'styles/base.css';
+@import 'styles/header.css';
+@import 'styles/forms.css';
+@import 'styles/tables.css';
+@import 'styles/utilities.css';
+@import 'styles/responsive.css';
+@import 'styles/print.css';
