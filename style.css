@@ -1,7 +1,7 @@
-@import 'styles/base.css';
-@import 'styles/header.css';
-@import 'styles/forms.css';
-@import 'styles/tables.css';
-@import 'styles/utilities.css';
-@import 'styles/responsive.css';
-@import 'styles/print.css';
+@import 'base.css';
+@import 'header.css';
+@import 'forms.css';
+@import 'tables.css';
+@import 'utilities.css';
+@import 'responsive.css';
+@import 'print.css';
