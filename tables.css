@@ -5,6 +5,17 @@ table {
     margin: 15px 0;
 }
 
+.backlaranja{
+    text-align: center;
+    background-color: #e6ae6f;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
 td {
     border: 1px solid #000;
     padding: 10px;
@@ -38,16 +49,153 @@ input[type="radio"] {
     accent-color: #007BFF; /* Cor personalizada para o botão */
     cursor: pointer; /* Muda o cursor para indicar clique */
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
 
-td {
-    border: 1px solid #000;
-}
 
 #descricao {
     margin: 10px;
     font-weight: bold;
+}
+
+#imagem-cell {
+    flex: 1;
+    text-align: center;
+}
+
+.iest{
+    display: flex;
+    gap: 20px;
+}
+
+.iest1{
+    flex: 5;
+}
+
+.iest2{
+    flex: 1;
+}
+
+.respest{
+    max-width: 60%;
+}
+
+.data{
+    max-width: 10%;
+}
+
+.respai{
+    max-width: 63%;
+}
+
+.respmae{
+    max-width: 62%;
+}
+
+.respend{
+    max-width: 90%;
+}
+
+.respcep{
+    max-width: 10%;
+}
+
+#cep0{
+    display: flex;
+    gap: 10px;    
+    align-items: center;
+    justify-content: left;
+}
+
+#cep{
+    max-width: 30%;
+}
+
+#cep2{
+    max-width: 70%;
+}
+
+.respmail{
+    max-width: 95%;
+}
+
+.vig{
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    gap: 10px; 
+    width: 100%;
+}
+.vig2{
+    width: 33.33%; 
+    padding: 5px;
+ }
+
+#descricaoTable{
+    width: 100%; 
+    text-align: left; 
+    margin-top: 10px;
+    border: 2px solid black;
+}
+.cid{
+    text-align: center;
+    background-color: #e6ae6f;
+    border: 1px solid black;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.responsive-table th, .responsive-table td {
+    padding: 8px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+#remedio{
+    width: 800px;
+}
+
+#tabelaProfissionais th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabelaProfissionais th {
+    background-color: #f4f4f4;
+}
+
+#tabelaProfissionais .btn-remove {
+    text-align: center;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-add {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#tabelaProfissionais th:first-child {
+    width: 20%;
+}
+
+#tabelaProfissionais th:nth-child(2) {
+    width: 60%;
+}
+
+#tabelaProfissionais th:nth-child(3) {
+    width: 20%;
+}
+
+#tabelaProfissionais th:last-child {
+    width: 10%;
 }
