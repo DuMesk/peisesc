@@ -18,9 +18,12 @@
         width: 100% !important;
     }
 
-    textarea {
+    table {
         width: 100%;
-        max-width: 100%;
+    }
+
+    p {
+        flex-direction: column;
     }
     
     #srm1{
@@ -30,6 +33,7 @@
     #srm1 p{
         font-size: 9pt;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -46,7 +50,20 @@
     }
 
     input, select, textarea {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+    p {
+        gap: 5px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
     }
 
     #srm1{
@@ -58,3 +75,150 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    table, tbody, th, td, tr {
+        display: block;
+    }
+    #ineee h1{
+        font-size: 14pt;
+        text-align: center;
+    }
+    #dssee h1, h2{
+        font-size: 14pt;
+        text-align: center;
+    }
+    #dssee p{
+        text-align: justify;
+    }
+    #tabelaProfissionais table, th, td {
+        font-size: 14px;
+    }
+    .btn-add {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    #tabelaProfissionais .btn-remove {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    #tabelaProfissionais input[type="text"], input[type="number"] {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    #tabelaProfissionais th:first-child {
+        width: 100%;
+    }
+    
+    #tabelaProfissionais th:nth-child(2) {
+        width: 100%;
+    }
+    
+    #tabelaProfissionais th:nth-child(3) {
+        width: 100%;
+    }
+    
+    #tabelaProfissionais th:last-child {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    button {
+        width: 170px;
+    }
+
+    #buscar {
+        width: 100px;
+    }
+
+    #cep{
+        max-width: 50%;
+    }
+
+    .iest{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .resp{
+        width: 230px;
+    }
+    .respest{
+        max-width: 100%;
+    }
+    .data{
+        max-width: 40%;
+    }
+    .respai{
+        max-width: 100%;
+    }
+    .respmae{
+        max-width: 100%;
+    }
+    .respmail{
+        max-width: 80%;
+    }
+
+    .vig2{
+        width: 100%; 
+        padding: 5px;
+     }
+    #descricaoTable {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid black;
+    }
+
+    .cid {
+        background-color: #f4f4f4;
+        padding: 8px;
+        width: 20%;
+    }
+    #descricaoTable:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: flex;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #cid11{
+        display: none;
+    }
+
+    .responsive-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .responsive-table th, .responsive-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .responsive-table th {
+        background-color: #f4f4f4;
+    }
+
+    .responsive-table tr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .responsive-table td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    #remedio{
+        width: 100%;
+    }
+    
+}
