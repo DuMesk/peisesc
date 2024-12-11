@@ -1,16 +1,3 @@
-function atualizarDescricao() {
-    const select = document.getElementById("laudo");
-    const descricaoDiv = document.getElementById("descricao");
-    const valorSelecionado = select.value;
-    const descricoes = {
-        "116A02.0": "TEA- Transtorno do Espectro Autista.",
-        "6A05.5": "TDAH - Transtorno do déficit de atenção e Hiperatividade Transtorno misto de Depressão e Ansiedade.",
-        "6A05.0": "TPAC - Transtorno do Processamento Auditivo Central.",
-        "6A73": "Transtorno misto de ansiedade e depressão."
-    };
-    descricaoDiv.textContent = descricoes[valorSelecionado] || "";
-}
-
 function selecionarImagem() {
     // Abre o seletor de arquivos
     document.getElementById("imagem-input").click();
@@ -48,3 +35,34 @@ document.getElementById("imagem-input").addEventListener("change", function(even
         });
     });
 
+    document.getElementById('buscar').addEventListener('click', () => {
+        const cep = document.getElementById('cep').value;
+    
+        // Verifica se o CEP é válido
+        if (!/^\d{8}$/.test(cep)) {
+            alert('Por favor, insira um CEP válido com 8 dígitos.');
+            return;
+        }
+    
+    // Chama a API ViaCEP
+    fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(response => {
+            if (!response.ok) throw new Error('Erro ao buscar o CEP');
+            return response.json();
+        })
+        .then(data => {
+            if (data.erro) {
+                document.getElementById('cep2').innerText = 'CEP não encontrado.';
+                return;
+            }
+
+            // Exibe o resultado
+            document.getElementById('cep2').innerHTML = `
+                <p>${data.logradouro}  |  ${data.bairro}  |  ${data.localidade}  |  ${data.uf}</p>
+            `;
+        })
+        .catch(error => {
+            document.getElementById('cep2').innerText = 'Erro ao buscar o CEP.';
+            console.error(error);
+        });
+    });
