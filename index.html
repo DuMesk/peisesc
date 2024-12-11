@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>PEI - EduSesc</title>
     <link rel="icon" href="icon.png" sizes="32x32" type="image/png">
 </head>
@@ -29,7 +29,7 @@
         <main>
             <div>
                 <br>
-                <p style="text-align: justify;">O Formulário visa formalizar o Planejamento Educacional Individualizado
+                <p style="text-align: justify">O Formulário visa formalizar o Planejamento Educacional Individualizado
                     (PEI), descrever as adaptações/adequações (constituem em possibilidades educacionais de se atuar
                     frente às dificuldades de aprendizagem dos estudantes, por meio do currículo dinâmico, alterável e
                     passível de ampliação), atuando de forma a possibilitar a quidade no processo de ensino-aprendizagem
@@ -46,109 +46,128 @@
 
             <table width="100%">
                 <tr>
-                    <td style="text-align: justify;">
+                    <td style="text-align: justify">
                         <b>Adequações organizativas:</b> têm um caráter facilitador do processo educacional.
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: justify;">
+                    <td style="text-align: justify">
                         <b>Adequações dos objetivos de aprendizagem</b>
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: justify;">
+                    <td style="text-align: justify">
                         <b>Adequações aos conteúdos</b>
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: justify;">
-                        <b>Adequações metodológicas e didáticas: </b>realizam-se por meio de procedimentos técnicos metodológicos, estratégias de ensino para a aprendizagem, atividades, programas específicos para os estudantes etc.
+                    <td style="text-align: justify">
+                        <b>Adequações metodológicas e didáticas: </b>realizam-se por meio de procedimentos técnicos
+                        metodológicos, estratégias de ensino para a aprendizagem, atividades, programas específicos para
+                        os estudantes etc.
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: justify;">
-                        <b>Adequações na temporalidade: </b>referem-se à alteração no tempo previsto para a realização das atividades ou conteúdos e ao período para alcançar determinados objetivos.
+                    <td style="text-align: justify">
+                        <b>Adequações na temporalidade: </b>referem-se à alteração no tempo previsto para a realização
+                        das atividades ou conteúdos e ao período para alcançar determinados objetivos.
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: justify;">
-                        <b>Adequações avaliativas: </b>consistem em adequações individuais dentro da programação regular considerando-se os objetivos para as aprendizagens, os conteúdos e os critérios de avaliação para responder às necessidades de cada estudante.
+                    <td style="text-align: justify">
+                        <b>Adequações avaliativas: </b>consistem em adequações individuais dentro da programação regular
+                        considerando-se os objetivos para as aprendizagens, os conteúdos e os critérios de avaliação
+                        para responder às necessidades de cada estudante.
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: justify;">
-                        <b>Adequações no ambiente de aprendizagem: </b>consiste na organização do espaço da sala de aula para facilitar o movimento e o acesso, especialmente para alunos com mobilidade reduzida e disponibilização de equipamentos específicos, como teclados adaptados, mesas reguláveis e tecnologias assistivas.
+                    <td style="text-align: justify">
+                        <b>Adequações no ambiente de aprendizagem: </b>consiste na organização do espaço da sala de aula
+                        para facilitar o movimento e o acesso, especialmente para alunos com mobilidade reduzida e
+                        disponibilização de equipamentos específicos, como teclados adaptados, mesas reguláveis e
+                        tecnologias assistivas.
                     </td>
                 </tr>
             </table>
             <br>
-            <table>
+            <table width="100%">
                 <tr>
-                    <td colspan="2" style="text-align: center; background-color: #e6ae6f;">
+                    <td class="backlaranja">
                         <b>Parte I: PEI – Planejamento Educacional Individualizado <br>
-                            1. IDENTIFICAÇÃO DO ESTUDANTE: (PROFESSOR AEE) </b></td>
+                            1. IDENTIFICAÇÃO DO ESTUDANTE: (PROFESSOR AEE)</b>
+                    </td>
                 </tr>
                 <tr>
                     <td>
-                        <p style="display: flex; align-items: center; gap: 10px;">
-                            Nome do Estudante: 
-                            <input type="text" name="nome" placeholder="Digite sua resposta" style="width: 460px">
-                            Data de Nascimento: 
-                            <input type="date" id="data-nascimento" name="data-nascimento" style="width: 150px">
+                        <p>Nome do Estudante: <input type="text" name="nome" class="respest"
+                                placeholder="Digite sua resposta">
+                            Data de Nascimento: <input type="date" class="data" name="data-nascimento">
                         </p>
                     </td>
-                    <td rowspan="5" width="200px">
-                        <div id="imagem-cell">
-                            <input type="file" id="imagem-input" accept="image/*" style="display: none;">
-                            <button onclick="selecionarImagem()">Inserir Foto</button>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Nome do Pai: <input type="text" name="pai" class="respai" placeholder="Digite sua resposta">
+                            Telefone do pai: <input type="tel" class="tel" name="telpai" maxlength="15">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Nome da Mãe: <input type="text" name="mae" class="respmae" placeholder="Digite sua resposta">
+                            Telefone da mãe: <input type="tel" class="tel" name="telmae" maxlength="15">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="cep0">
+                        <div id="cep1">
+                            <p>CEP: <input type="text" name="cep" id="cep" class="respcep" placeholder="Digite o CEP"
+                                    maxlength="8">
+                                <button id="buscar">Buscar</button>
+                            </p>
+                        </div>
+                        <div id="cep2">
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p style="display: flex; align-items: center; gap: 10px">Nome do Pai: <input type="text" name="pai" placeholder="Digite sua resposta" style="width: 510px"> 
-                        Telefone do pai: <input type="tel" class="tel" name="telpai" maxlength="15"></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p style="display: flex; align-items: center; gap: 10px">Nome da Mãe: <input type="text" name="mae" placeholder="Digite sua resposta" style="width: 500px">
-                        Telefone da mãe: <input type="tel" class="tel" name="telmae" maxlength="15"></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p style="display: flex; align-items: center; gap: 10px">Endereço: <input type="text" name="endereco" placeholder="Digite sua resposta"></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p style="display: flex; align-items: center; gap: 10px">E-mail: <input type="email" name="email" style="width: 900px"></p>
+                        <p>E-mail: <input type="email" class="respmail" name="email" placeholder="Digite sua resposta">
+                        </p>
                     </td>
                 </tr>
             </table>
+            <div id="imagem-cell">
+                <input type="file" id="imagem-input" accept="image/*" style="display: none">
+                <button onclick="selecionarImagem()">Inserir Foto</button>
+            </div>
+
             <br>
-            <table style="width: 100%; border-collapse: collapse">
-                
+            <table>
                 <tr>
                     <td>
                         <div id="modalidade">
                             <p>Selecione a modalidade:</p>
-                            <label><input type="radio" name="modalidade" value="EI" onclick="mostrarOpcoes('EI')"> EI</label><br>
-                            <label><input type="radio" name="modalidade" value="AI" onclick="mostrarOpcoes('AI')"> AI</label><br>
-                            <label><input type="radio" name="modalidade" value="AF" onclick="mostrarOpcoes('AF')"> AF</label><br>
-                            <label><input type="radio" name="modalidade" value="EM" onclick="mostrarOpcoes('EM')"> EM</label><br>
+                            <label><input type="radio" name="modalidade" value="EI" onclick="mostrarOpcoes('EI')">
+                                EI</label>
+                            <label><input type="radio" name="modalidade" value="AI" onclick="mostrarOpcoes('AI')">
+                                AI</label>
+                            <label><input type="radio" name="modalidade" value="AF" onclick="mostrarOpcoes('AF')">
+                                AF</label>
+                            <label><input type="radio" name="modalidade" value="EM" onclick="mostrarOpcoes('EM')">
+                                EM</label>
                         </div>
                     </td>
-            
+
                     <td>
-                        <p>Selecione a opção correspondente:</p>
-                        <div id="opcoesDiv" style="display: none;">
+                        <p style="text-align: center">Selecione a opção correspondente:</p>
+                        <div id="opcoesDiv" style="display: none; text-align: center;">
                             <div id="opcoes"></div>
                         </div>
                     </td>
                     <td>
-                        <div>
+                        <div style="text-align: center;">
                             <p>Selecione a turma:</p>
                             <label><input type="radio" id="turmaA" name="turma" value="A">A</label>
                             <label><input type="radio" id="turmaB" name="turma" value="B">B</label>
@@ -160,158 +179,189 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px; width: 100%;">
-                            <hr style="flex: 1; border: 1px solid #ccc; margin: 0;"> 
-                            <p style="margin: 0; white-space: nowrap;">Período de Vigência:</p> 
-                            <hr style="flex: 1; border: 1px solid #ccc; margin: 0;"> 
+                    <td id="cell" colspan="3">
+                        <div class="vig">
+                            <hr style="flex: 1; border: 1px solid #ccc; margin: 0;">
+                            <p style="margin: 0; white-space: nowrap;">Período de Vigência:</p>
+                            <hr style="flex: 1; border: 1px solid #ccc; margin: 0;">
                         </div>
                     </td>
-                <tr style="padding: 25px;">
-                    <td style="width: 33.33%; padding: 5px;">
-                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 100%;">
-                            <p style="margin: 0; white-space: nowrap;">1º Trimestre:
-                            <input type="date" id="inicio1sem" name="inicio1sem" style="width: 120px; flex: 0 1 auto;">
-                            <span style="margin: 0 5px;">a</span>
-                            <input type="date" id="fim1sem" name="fim1sem" style="width: 120px; flex: 0 1 auto;"></p>
-                        </div>
-                    </td>
-                    
-                    <td style="width: 33.33%; padding: 5px;">
-                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 100%;">
-                            <p style="margin: 0; white-space: nowrap;">2º Trimestre:
-                            <input type="date" id="inicio2sem" name="inicio2sem" style="width: 120px; flex: 0 1 auto;">
-                            <span style="margin: 0 5px;">a</span>
-                            <input type="date" id="fim2sem" name="fim2sem" style="width: 120px; flex: 0 1 auto;"></p>
-                        </div>
-                    </td>
-                    
-                    <td style="width: 33.33%; padding: 5px;">
-                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 100%;">
-                            <p style="margin: 0; white-space: nowrap;">3º Trimestre:
-                            <input type="date" id="inicio3sem" name="inicio3sem" style="width: 120px; flex: 0 1 auto;">
-                            <span style="margin: 0 5px;">a</span>
-                            <input type="date" id="fim3sem" name="fim3sem" style="width: 120px; flex: 0 1 auto;"></p>
-                        </div>
-                    </td>
-                    
                 </tr>
+                <div id="vig3">
+                    <tr style="text-align: center; border: 1;">
+                        <td class="vig2">
+                            <div
+                                style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+                                <p style="margin: 0; white-space: nowrap;">1º Trimestre: <br>
+                                    <input type="date" id="inicio1sem" name="inicio1sem"
+                                        style="width: 120px; flex: 0 1 auto;">
+                                    <span style="margin: 0 5px;">a</span>
+                                    <input type="date" id="fim1sem" name="fim1sem"
+                                        style="width: 120px; flex: 0 1 auto;">
+                                </p>
+                            </div>
+                        </td>
+
+                        <td class="vig2">
+                            <div
+                                style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+                                <p style="margin: 0; white-space: nowrap;">2º Trimestre: <br>
+                                    <input type="date" id="inicio2sem" name="inicio2sem"
+                                        style="width: 120px; flex: 0 1 auto;">
+                                    <span style="margin: 0 5px;">a</span>
+                                    <input type="date" id="fim2sem" name="fim2sem"
+                                        style="width: 120px; flex: 0 1 auto;">
+                                </p>
+                            </div>
+                        </td>
+
+                        <td class="vig2">
+                            <div
+                                style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+                                <p style="margin: 0; white-space: nowrap;">3º Trimestre: <br>
+                                    <input type="date" id="inicio3sem" name="inicio3sem"
+                                        style="width: 120px; flex: 0 1 auto;">
+                                    <span style="margin: 0 5px;">a</span>
+                                    <input type="date" id="fim3sem" name="fim3sem"
+                                        style="width: 120px; flex: 0 1 auto;">
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </div>
+            </table>
+            <table>
                 <tr>
-                    <td colspan="3">
+                    <td>
                         <form>
                             <label for="laudo">Relatório/Laudo/CID: </label>
-                            <select id="laudo" name="laudo" onchange="atualizarDescricao()">
+                            <select id="laudo" name="laudo">
                                 <option value="" disabled selected>Selecione uma opção</option>
-                                <option value="116A02.0">116A02.0</option>
-                                <option value="6A05.5">6A05.5</option>
-                                <option value="6A05.0">6A05.0</option>
-                                <option value="6A73">6A73</option>
+                                <option value="116A02.0">116A02.0 - TEA - Transtorno do Espectro Autista.</option>
+                                <option value="6A05.5">6A05.5 - TDAH - Transtorno do déficit de atenção e
+                                    Hiperatividade.</option>
+                                <option value="6A05.0">6A05.0 - TPAC - Transtorno do Processamento Auditivo Central.
+                                </option>
+                                <option value="6A73">6A73 - Transtorno misto de ansiedade e depressão.</option>
                             </select>
+                            <button type="button" onclick="adicionarDescricao()">Adicionar</button>
                         </form>
-                        <div id="descricao"></div>
+                        <table id="descricaoTable" class="responsive-table">
+                            <tr id="cid11">
+                                <td class="cid">CID</td>
+                                <td class="cid">Descrição</td>
+                                <td class="cid">Ações</td>
+                            </tr>
+                            <tbody>
+                                <!-- As linhas serão adicionadas aqui -->
+                            </tbody>
+                        </table>
                     </td>
                 </tr>
             </table>
-            <table>
+            <table id="ineee">
                 <tr>
                     <td colspan="2" style="text-align: center; background-color: #e6ae6f;"><b>2. IDENTIFICAÇÃO DAS
                             NECESSIDADES EDUCACIONAIS ESPECIAIS DO ESTUDANTE: (PROFESSOR AEE)</b></td>
                 </tr>
                 <tr>
                     <td>
-                        <h1>&#8688;Transtornos do Neurodesenvolvimento:</h1>
-                        <hr>
+                        <h1 class="ineeeh1">&#8688; Transtornos do Neurodesenvolvimento:</h1>
+                        <br>
                         (
-                        <select id="tdah" name="tdah">
+                        <select id="tdah" name="tdah" style="width: 50px">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
                         ) Transtorno de Déficit de Atenção e Hiperatividade <br>
                         (
-                        <select id="tdah" name="tdah">
+                        <select id="tdah" name="tdah" style="width: 50px">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
                         ) Transtorno do Processamento Auditivo Central (DPAC/TPAC) <br>
                         (
-                        <select id="tdah" name="tdah">
+                        <select id="tdah" name="tdah" style="width: 50px">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
                         ) Transtorno do Espectro Autista (TEA) <br>
                         (
-                        <select id="tdah" name="tdah">
+                        <select id="tdah" name="tdah" style="width: 50px">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
                         ) Transtorno específico de aprendizagem <br>
                         &#8627; (
-                        <select id="tdah" name="tdah">
+                        <select id="tdah" name="tdah" style="width: 50px">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
                         ) Com prejuízo na leitura <br>
                         &#8627;(
-                        <select id="tdah" name="tdah">
+                        <select id="tdah" name="tdah" style="width: 50px">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
                         ) Com prejuízo na expressão escrita <br>
                         &#8627;(
-                        <select id="tdah" name="tdah">
+                        <select id="tdah" name="tdah" style="width: 50px">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
                         ) Com prejuízo na matemática <br>
-                        <hr>
+                        <br>
                         (
-                        <select id="tdah" name="tdah">
+                        <select id="tdah" name="tdah" style="width: 50px">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
                         ) Transtorno do Desenvolvimento Intelectual <br>
                         (
-                        <select id="tdah" name="tdah">
+                        <select id="tdah" name="tdah" style="width: 50px">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
-                        ) Outro. Transtorno misto de Depressão e Ansiedade <br> <br>
-                        <h1>&#8688;Ausência de laudo médico/relatório de avaliação diagnóstica </h1>
-                        <p>Está em processo de avaliação? (
-                            <select id="tdah" name="tdah">
+                        ) Outro. Transtorno misto de Depressão e Ansiedade
+                        <hr> <br>
+                        <h1>&#8688; Ausência de laudo médico/relatório de avaliação diagnóstica </h1>
+                        <p>Está em processo de avaliação? <br>(
+                            <select id="tdah" name="tdah" style="width: 50px">
                                 <option value="vazio"></option>
                                 <option value="X">X</option>
                             </select>
                             ) Não (
-                            <select id="tdah" name="tdah">
+                            <select id="tdah" name="tdah" style="width: 50px">
                                 <option value="vazio"></option>
                                 <option value="X">X</option>
                             </select>
                             ) Sim
                         </p>
-                        <p>&#8688;Há encaminhamentos?(
-                            <select id="tdah" name="tdah">
+                        <p>&#8688;Há encaminhamentos?<br>(
+                            <select id="tdah" name="tdah" style="width: 50px">
                                 <option value="vazio"></option>
                                 <option value="X">X</option>
                             </select>
                             ) Não (
-                            <select id="tdah" name="tdah">
+                            <select id="tdah" name="tdah" style="width: 50px">
                                 <option value="vazio"></option>
                                 <option value="X">X</option>
                             </select>
                             ) Sim
                         </p>
+                        <hr>
                         <h2>2.1- Faz uso de medicação de uso contínuo?</h2>
-                        ( <select id="tdah" name="tdah">
+                        ( <select id="tdah" name="tdah" style="width: 50px">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
                         ) Não (
-                        <select id="tdah" name="tdah">
+                        <select id="tdah" name="tdah" style="width: 50px">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
-                        ) Sim Qual? <input type="text" name="remedio" placeholder="Digite o medicamento"> <br>
+                        ) Sim | Qual? <input type="text" id="remedio" name="remedio" placeholder="Digite o medicamento">
+                        <br>
                         <label for="observacoes">Observações (máximo 200 caracteres):</label><br>
                         <textarea id="observacoes" name="observacoes" rows="4" cols="100" maxlength="200"
                             placeholder="Digite suas observações aqui..."></textarea><br>
@@ -319,10 +369,10 @@
                 </tr>
             </table>
             <hr>
-            <table>
+            <table id="dssee">
                 <tr>
                     <td>
-                        <h3>DESCRIÇÃO SUCINTA SOBRE A ESCOLARIZAÇÃO DO(A) ESTUDANTE </h3>
+                        <h1>DESCRIÇÃO SUCINTA SOBRE A ESCOLARIZAÇÃO DO(A) ESTUDANTE </h1>
                         <p>Descrever quais modalidades de atendimentos o estudante frequentou no processo de
                             escolarização,
                             suas habilidades e fragilidades, necessidades específicas, dentre outras informações
@@ -335,7 +385,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <h2>2.2 – ANAMNESE COM O ESTUDANTE: (PROFESSOR AEE) </h2>
+                        <h2>2.2 – ANAMNESE COM O ESTUDANTE: (PROFESSOR AEE)</h2>
                         <h3>PRINCIPAIS INTERESSES DESCRITOS PELO DISCENTE:</h3>
                         <label for="observacoes">Observações (máximo 500 caracteres):</label><br>
                         <textarea id="observacoes" name="observacoes" rows="4" cols="100" maxlength="200"
@@ -363,9 +413,13 @@
                         <h3>Faça uma breve descrição da rotina do estudante:</h3>
                         <textarea id="observacoes" name="observacoes" rows="4" cols="100" maxlength="200"
                             placeholder="Digite suas observações aqui..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <h2>2.4 -Informações de educação PRECOCE/ESTIMULAÇÃO e ou instituição anterior: </h2>
-                        <h3>Idade em que entrou na escola: <select id="ano" name="ano">
-                                <option value="" disabled selected>Selecione um ano</option>
+                        <h3>Ano em que entrou na escola: <select id="ano" name="ano" style="width: 100px;">
+                                <option value="" disabled selected>Ano</option>
                                 <option value="2001">2001</option>
                                 <option value="2002">2002</option>
                                 <option value="2003">2003</option>
@@ -391,16 +445,18 @@
                                 <option value="2023">2023</option>
                                 <option value="2024">2024</option>
                             </select></h3>
-                        <h3>Frequentou algum programa de educação/estimulação precoce? ( <select id="tdah" name="tdah">
-                                <option value="vazio"></option>
-                                <option value="X">X</option>
-                            </select>
-                            ) Não (
-                            <select id="tdah" name="tdah">
-                                <option value="vazio"></option>
-                                <option value="X">X</option>
-                            </select>
-                            ) Sim Qual? <input type="text" name="remedio" placeholder="Digite o medicamento"> <br>
+                        <h3> Frequentou algum programa de educação / estimulação precoce ?<br></h3> ( <select id="tdah"
+                            name="tdah" style="width: 50px;">
+                            <option value="vazio"></option>
+                            <option value="X">X</option>
+                        </select>
+                        ) Não (
+                        <select id="tdah" name="tdah" style="width: 50px;">
+                            <option value="vazio"></option>
+                            <option value="X">X</option>
+                        </select>
+                        ) Sim Qual? <input type="text" name="remedio"
+                            placeholder="Digite o programa de educação/estimulação precoce"> <br>
                         </h3>
                     </td>
                 </tr>
@@ -414,81 +470,16 @@
                         e demais atividades esportivas, atendimento psicopedagógico, modalidades do AEE). (PROFESSOR
                         AEE)</td>
                 </tr>
-                <tr>
-                    <td width="20%"><b>PROFISSIONAIS</b></td>
-                    <td width="60%">NOME</td>
-                    <td width="20%">CONTATO</td>
-                </tr>
-                <tr>
-                    <td width="20%"><b>Fonoaudiologia</b></td>
-                    <td width="60%"><input type="text" name="nome" style="width: 800px;" placeholder="Digite o nome">
-                    </td>
-                    <td width="20%"><input type="number" name="tel" maxlength="11" style="width: 250px;"
-                            placeholder="Digite o telefone"></td>
-                </tr>
-                <tr>
-                    <td width="20%"><b>Psicoterapia</b></td>
-                    <td width="60%"><input type="text" name="nome" style="width: 800px;" placeholder="Digite o nome">
-                    </td>
-                    <td width="20%"><input type="number" name="tel" maxlength="11" style="width: 250px;"
-                            placeholder="Digite o telefone"></td>
-                </tr>
-                <tr>
-                    <td width="20%"><b>Terapia ocupacional</b></td>
-                    <td width="60%"><input type="text" name="nome" style="width: 800px;" placeholder="Digite o nome">
-                    </td>
-                    <td width="20%"><input type="number" name="tel" maxlength="11" style="width: 250px;"
-                            placeholder="Digite o telefone"></td>
-                </tr>
-                <tr>
-                    <td width="20%"><b>Psicopedagogia</b></td>
-                    <td width="60%"><input type="text" name="nome" style="width: 800px;" placeholder="Digite o nome">
-                    </td>
-                    <td width="20%"><input type="number" name="tel" maxlength="11" style="width: 250px;"
-                            placeholder="Digite o telefone"></td>
-                </tr>
-                <tr>
-                    <td width="20%"><b>Intervenção ABA</b></td>
-                    <td width="60%"><input type="text" name="nome" style="width: 800px;" placeholder="Digite o nome">
-                    </td>
-                    <td width="20%"><input type="number" name="tel" maxlength="11" style="width: 250px;"
-                            placeholder="Digite o telefone"></td>
-                </tr>
-                <tr>
-                    <td width="20%"><b>Neuropediatria</b></td>
-                    <td width="60%"><input type="text" name="nome" style="width: 800px;" placeholder="Digite o nome">
-                    </td>
-                    <td width="20%"><input type="number" name="tel" maxlength="11" style="width: 250px;"
-                            placeholder="Digite o telefone"></td>
-                </tr>
-                <tr>
-                    <td width="20%"><b>Psiquiatria</b></td>
-                    <td width="60%"><input type="text" name="nome" style="width: 800px;" placeholder="Digite o nome">
-                    </td>
-                    <td width="20%"><input type="number" name="tel" maxlength="11" style="width: 250px;"
-                            placeholder="Digite o telefone"></td>
-                </tr>
-                <tr>
-                    <td width="20%"><b>Nutricionista</b></td>
-                    <td width="60%"><input type="text" name="nome" style="width: 800px;" placeholder="Digite o nome">
-                    </td>
-                    <td width="20%"><input type="number" name="tel" maxlength="11" style="width: 250px;"
-                            placeholder="Digite o telefone"></td>
-                </tr>
-                <tr>
-                    <td width="20%"><b>Atividades esportistas</b></td>
-                    <td width="60%"><input type="text" name="nome" style="width: 800px;" placeholder="Digite o nome">
-                    </td>
-                    <td width="20%"><input type="number" name="tel" maxlength="11" style="width: 250px;"
-                            placeholder="Digite o telefone"></td>
-                </tr>
-                <tr>
-                    <td width="20%"><b>Outros</b></td>
-                    <td width="60%"><input type="text" name="nome" style="width: 800px;" placeholder="Digite o nome">
-                    </td>
-                    <td width="20%"><input type="number" name="tel" maxlength="11" style="width: 250px;"
-                            placeholder="Digite o telefone"></td>
-                </tr>
+                <table id="tabelaProfissionais">
+                    <tr>
+                        <th><b>PROFISSIONAIS</b></th>
+                        <th>NOME</th>
+                        <th>CONTATO</th>
+                        <th>EXCLUIR</th>
+                    </tr>
+                </table>
+
+                <button class="btn-add" onclick="adicionarLinha()">Adicionar Profissional</button><br><br>
                 <tr>
                     <td colspan="3" style="text-align: justify; font-size: 11pt; background-color: #e6ae6f;">
                         <b>Informações/ Recomendações do(s) profissionais que realizando atendimento terapêutico e/ou
@@ -504,8 +495,9 @@
             <table>
                 <tr>
                     <td>
-                        <h2>3.1 - OUTRAS INFORMAÇÕES RELEVANTES: INTERPRETAÇÃO E/OU RESUMOS DOS RELATÓRIOS
-                            NEUROPSICOLÓGICOS (EXAMES APRESENTADOS):</h2>
+                        <h3 style="text-align: justify">3.1 - OUTRAS INFORMAÇÕES RELEVANTES: INTERPRETAÇÃO E/OU RESUMOS
+                            DOS RELATÓRIOS
+                            NEUROPSICOLÓGICOS (EXAMES APRESENTADOS):</h3>
                         <textarea id="observacoes" name="observacoes" rows="4" cols="100" maxlength="200"
                             placeholder="Digite suas observações aqui..."></textarea>
                     </td>
@@ -513,7 +505,7 @@
             </table>
             <table>
                 <tr>
-                    <td style="text-align: justify; font-size: 11pt; background-color: #e6ae6f;" colspan="2">
+                    <td colspan="2" style="text-align: justify; font-size: 11pt; background-color: #e6ae6f;">
                         <h2>4. PLANO DE ATENDIMENTO EDUCACIONAL ESPECIALIZADO (PAEE) (PROFESSOR AEE) </h2>
                     </td>
                 </tr>
@@ -539,7 +531,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <h3>4.2 TEMPO DE ATENDIMENTO: <select id="tempo" name="tempo">
+                        <h3>4.2 TEMPO DE ATENDIMENTO: <select id="tempo" name="tempo" style="width: 55px;">
                                 <option value="" disabled selected>00</option>
                                 <option value="10">10</option>
                                 <option value="15">15</option>
@@ -559,13 +551,13 @@
                     <td colspan="2">
                         <h3>4.3 COMPOSIÇÃO DO ATENDIMENTO</h3>
                         (
-                        <select id="individual" name="individual">
+                        <select id="individual" name="individual" style="width: 50px;">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
-                        ) individual <br> <br>
+                        ) individual
                         (
-                        <select id="coletivo" name="coletivo">
+                        <select id="coletivo" name="coletivo" style="width: 50px;">
                             <option value="vazio"></option>
                             <option value="X">X</option>
                         </select>
@@ -597,259 +589,271 @@
                 </tr>
                 <tr>
                     <td>
-                        <p>
-                        <h4>5.1 ORGANIZATIVAS: </h4>
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Organização dos agrupamentos dos estudantes (tamanho-homogeneidade-heterogeneidade). <br>
+                        <>
+                            <h4>5.1 ORGANIZATIVAS: </h4><br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Organização dos agrupamentos dos estudantes (tamanho-homogeneidade-heterogeneidade). <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Organização dos recursos didáticos. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Organização dos recursos didáticos. <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Organização didática da aula. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Organização didática da aula. <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Organização dos períodos definidos para as atividades previstas. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Organização dos períodos definidos para as atividades previstas. <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Organização do espaço físico e condições ambientais. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Organização do espaço físico e condições ambientais. <br>
+                            <hr>
+                            <h4>5.2 OBJETIVOS: </h4> <br>
 
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Priorização de capacidades e habilidades básicas de atenção, participação e
+                            adaptabilidades.
+                            <br>
 
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Priorização de objetivos conceituais, procedimentais ou atitudinais. <br>
 
-                        <h4>5.2 OBJETIVOS: </h4> <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Adequação de objetivos <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Priorização de capacidades e habilidades básicas de atenção, participação e adaptabilidades.
-                        <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Introdução de objetivos específicos, complementares e/ou alternativos. <br>
+                            <hr>
+                            <h4>5.3 ADEQUAÇÕES AOS CONTEÚDOS </h4><br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Priorização de objetivos conceituais, procedimentais ou atitudinais. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Priorização de áreas, disciplinas, unidades de conteúdo ou tipos de conteúdo (garantindo a
+                            funcionalidade e as aprendizagens posteriores). <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Adequação de objetivos <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Reformulação de sequência dos conteúdos (pormenorizando processos gradativos de menor a
+                            maior
+                            complexidade de tarefas, sequenciação de passos, ordenação das aprendizagens...) <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Introdução de objetivos específicos, complementares e/ou alternativos. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Retomada de determinados conteúdos, garantindo seu domínio e consolidação. <br>
 
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Eliminação de conteúdos menos relevantes, secundários, para dar enfoque mais intensivo e
+                            prolongado a conteúdos mais básicos e essenciais no currículo. <br>
 
-
-                        <h4>5.3 ADEQUAÇÕES AOS CONTEÚDOS </h4>
-
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Priorização de áreas, disciplinas, unidades de conteúdo ou tipos de conteúdo (garantindo a
-                        funcionalidade e as aprendizagens posteriores). <br>
-
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Reformulação de sequência dos conteúdos (pormenorizando processos gradativos de menor a maior
-                        complexidade de tarefas, sequenciação de passos, ordenação das aprendizagens...) <br>
-
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Retomada de determinados conteúdos, garantindo seu domínio e consolidação. <br>
-
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Eliminação de conteúdos menos relevantes, secundários, para dar enfoque mais intensivo e
-                        prolongado a conteúdos mais básicos e essenciais no currículo. <br>
-
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Introdução de conteúdos específicos, complementares ou alternativos para estudantes com AH/SD.
-                        <br>
-
-
-
-                        <h4>5.4 ADEQUAÇÃO METODOLÓGICAS </h4><br>
-
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Modificação de procedimentos/estratégias. <br>
-
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Introdução de métodos, procedimentos e atividades e alternativas e/ou complementares às
-                        previstas. <br>
-
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Mudança no nível de complexidade das atividades (abstrações) <br>
-
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Modificações da sequência da tarefa. <br>
-
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Facilitação dos planos de ação. <br>
-
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Adaptação dos materiais utilizados. <br>
-
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Utilização de recursos de recursos específicos de acesso ao currículo. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Introdução de conteúdos específicos, complementares ou alternativos para estudantes com
+                            AH/SD.
+                            <br>
+                            <hr>
 
 
 
-                        <h4>5.5 ADEQUAÇÕES AVALIATIVAS </h4> <br>
+                            <h4>5.4 ADEQUAÇÃO METODOLÓGICAS </h4><br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Adaptação e/ou modificações de técnicas, instrumentos, procedimentos e critérios. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Modificação de procedimentos/estratégias. <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Introdução de critérios específicos de avaliação. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Introdução de métodos, procedimentos e atividades e alternativas e/ou complementares às
+                            previstas. <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Eliminação de critérios gerais de avaliação. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Mudança no nível de complexidade das atividades (abstrações) <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Modificação dos critérios de promoção. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Modificações da sequência da tarefa. <br>
+
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Facilitação dos planos de ação. <br>
+
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Adaptação dos materiais utilizados. <br>
+
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Utilização de recursos de recursos específicos de acesso ao currículo. <br>
+                            <hr>
 
 
 
-                        <h4>5.6 ADEQUAÇÕES À TEMPORALIDADE </h4> <br>
+                            <h4>5.5 ADEQUAÇÕES AVALIATIVAS </h4> <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Aumento do tempo previsto para o trato de determinados objetivos/conteúdos. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Adaptação e/ou modificações de técnicas, instrumentos, procedimentos e critérios. <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Diminuição do tempo previsto para o trato de determinados objetivos/conteúdos. <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Introdução de critérios específicos de avaliação. <br>
+
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Eliminação de critérios gerais de avaliação. <br>
+
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Modificação dos critérios de promoção. <br>
+                            <hr>
 
 
 
-                        <h4>5.7 ADEQUAÇÕES AO AMBIENTE DE APRENDIZAGEM </h4> <br>
+                            <h4>5.6 ADEQUAÇÕES À TEMPORALIDADE </h4> <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Disposição da sala de aula <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Aumento do tempo previsto para o trato de determinados objetivos/conteúdos. <br>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Uso de recursos específicos <br>
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Diminuição do tempo previsto para o trato de determinados objetivos/conteúdos. <br>
+                            <hr>
 
-                        (
-                        <select id="coletivo" name="coletivo">
-                            <option value="vazio"></option>
-                            <option value="X">X</option>
-                        </select>
-                        ) Outros <br>
 
-                        <h2>6. TERMINALIDADE ESPECÍFICA </h2> <br>
 
-                        <h3>DISPOSTO NA RESOLUÇÃO CNE/CEB Nº 2, DE 11 DE SETEMBRO DE 2001 </h3> <br>
+                            <h4>5.7 ADEQUAÇÕES AO AMBIENTE DE APRENDIZAGEM </h4> <br>
 
-                        <p>7. Projeto global desenvolvido e projetos escolares que o estudante participa (Atendimento
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Disposição da sala de aula <br>
+
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Uso de recursos específicos <br>
+
+                            (
+                            <select id="coletivo" name="coletivo" style="width: 50px;">
+                                <option value="vazio"></option>
+                                <option value="X">X</option>
+                            </select>
+                            ) Outros <br>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <h3>6. TERMINALIDADE ESPECÍFICA - DISPOSTO NA RESOLUÇÃO CNE/CEB Nº 2, DE 11 DE SETEMBRO DE 2001 </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>7. Projeto global desenvolvido e projetos escolares que o estudante participa (Atendimento
                             individualizado pelo professor dos componentes curriculares que fazem parte da construção
                             pedagógica, apoio pedagógico, recuperação de requisitos e/ou suplementação de conteúdos):
-                        </p> <br>
-
-                        <p>8. Descreve a integração do(a) estudante com os participantes do projeto quando a realização
-                            das oficinas, desenvolvimento, apresentações e processos avaliativos. </p><br>
+                            <input type="text" name="nome"
+                                placeholder="Digite sua resposta">
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>8. Descreve a integração do(a) estudante com os participantes do projeto quando a realização
+                        das oficinas, desenvolvimento, apresentações e processos avaliativos. </h3>
                     </td>
                 </tr>
             </table>
@@ -890,1063 +894,185 @@
                 </tr>
             </table>
             <br>
-            <div>
-                <h3>INFORMAÇÕES GERAIS DO COMPONENTE CURRICULAR:
-                    <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="arte">ARTE</option>
-                    </select>
+            <button onclick="adicionarDiv()">Adicionar Componente Curricular</button>
+<div id="containerDiv">
+    <div class="componente">
+        <h3>INFORMAÇÕES GERAIS DO COMPONENTE CURRICULAR:
+            <select id="coletivo" name="coletivo" style="width: 200px;">
+                <option value="vazio"></option>
+                <option value="arte">ARTE</option>
+                <option value="biologia">BIOLOGIA</option>
+                <option value="ciencias">CIÊNCIAS</option>
+                <option value="edfisica">ED. FÍSICA</option>
+                <option value="filosofia">FILOSOFIA</option>
+                <option value="fisica">FÍSICA</option>
+                <option value="iformativo">I. FORMATIVO</option>
+                <option value="geografia">GEOGRAFIA</option>
+                <option value="historia">HISTÓRIA</option>
+                <option value="linglesa">L. INGLESA</option>
+                <option value="lportuguesa">L. PORTUGUESA</option>
+                <option value="matematica">MATEMÁTICA</option>
+                <option value="quimica">QUÍMICA</option>
+                <option value="redacao">REDAÇÃO</option>
+                <option value="sociologia">SOCIOLOGIA</option>
+                <option value="pc">P. C.</option>
+            </select>
+            <br>
+            PROFESSOR: <select id="professor" name="professor" style="width: 500px;">
+                <option value="vazio"></option>
+                <option value="Adbel">Adbel Pereira dos Santos</option>
+                <option value="Alejandra">Alejandra Victoria Trindade Rabelo</option>
+                <option value="Camila">Camila Brotto Fischer</option>
+                <option value="Edu">Edu Silva de Mesquita</option>
+                <option value="Elves">Elves Ferreira da Costa</option>
+                <option value="Everton">Everton de Moura Guedes</option>
+                <option value="Fabio">Fabio Fonseca</option>
+                <option value="Leticia">Letícia Helena de Oliveira Rondon</option>
+                <option value="Marcos">Marcos Antônio de Oliveira Dias</option>
+                <option value="Nicholas">Nicholas Santos Pires Lima</option>
+                <option value="Riquelle">Riquelle Magalhães Silva</option>
+                <option value="Sikandra">Sikandra - Lis Fonseca Paulinelli Garcia Silveira</option>
+                <option value="Victor">Victor Maciel Simões</option>
+            </select>
+            <br>
+            MATRÍCULA: <input type="number" name="matricula" style="width: 100px;">
+        </h3>
+        <button onclick="removerDiv(this)">Remover</button>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <p>OBJETIVOS PRIORIZADOS NO SEMESTRE: <span class="verm">(comportamentos, habilidades/competências e saberes que o professor deseja que o estudante desenvolva com o término da disciplina.)</span> <textarea name="objetivos_priorizados" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>OBJETIVOS DA DISCIPLINA AO TÉRMINO DO ANO LETIVO: <textarea name="objetivos_ano" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>OBJETIVOS ESPECÍFICOS DA DISCIPLINA: <span class="verm">(intermediários e pequenos para alcançarem os pré-requisitos não que estão em processo de aprendizagem)</span>
+                        <textarea name="objetivos_especificos" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>CONTEÚDOS PRIORIZADOS NO SEMESTRE/ SABERES A SEREM CONSTRUÍDOS: <textarea name="conteudos_priorizados" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>METODOLOGIAS ESPECÍFICAS: <span class="verm">(condições de ensino que serão criadas para desenvolver os objetivos/conteúdos)</span> <textarea name="metodologias" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>AVALIAÇÃO: <span class="verm">(processos avaliativos que visam estabelecer parâmetros de revisão e/ou promoção dos objetivos)</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Atividades avaliativas dos Projetos Globais: <textarea name="atividades_globais" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Atividades avaliativas específicas da disciplina: <span class="verm">(intermediários e pequenos para alcançarem os pré-requisitos não que estão em processo de aprendizagem)</span> <textarea name="atividades_especificas" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
 
-                    PROFESSOR: <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="Adbel">Adbel Pereira dos Santos</option>
-                    </select>
-                    MATRÍCULA: <input type="number" name="matricula" placeholder="Digite sua matrícula">
-                </h3>
-                <br>
-                <table>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS PRIORIZADOS NO SEMESTRE: <span class="verm">(comportamentos,
-                                    habilidades/competências e saberes que o professor deseja que o estudante desenvolva
-                                    com o término da disciplina.)</span> <textarea id="observacoes" name="observacoes"
-                                    rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS DA DISCIPLINA AO TÉRMINO DO ANO LETIVO: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS ESPECÍFICOS DA DISCIPLINA: <span class="verm">(intermediários e pequenos para
-                                    alcançarem os pré-requisitos não que estão em processo de aprendizagem) </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONTEÚDOS PRIORIZADOS NO SEMESTRE/ SABERES A SEREM CONSTRUÍDOS: <textarea
-                                    id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>METODOLOGIAS ESPECÍFICAS: <span class="verm">(condições de ensino que serão criadas para
-                                    desenvolver os objetivos/conteúdos) </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>AVALIAÇÃO: <span class="verm">(processos avaliativos que visam estabelecer parâmetros de
-                                    revisão e/ou promoção dos objetivos) </span> </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas dos Projetos Globais: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas específicas da disciplina: <span class="verm">(intermediários e
-                                    pequenos para alcançarem os pré-requisitos não que estão em processo de
-                                    aprendizagem) </span> <textarea id="observacoes" name="observacoes" rows="5"
-                                    cols="175" maxlength="200" placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                </table> <br>
-                <table>
-                    <tr>
-                        <td style="text-align: justify; font-size: 14pt; background-color: #e6ae6f;">
-                            <p>HABILIDADES BIOPSICOSSOCIAIS: <span class="vermama">(PROFESSOR CONSELHEIRO RESPONDE)
-                                </span></p>
-                            <p>Envolve as habilidades conceituais, sociais e práticas adquiridas pelas pessoas para
-                                funcionarem em suas vidas diárias. Exemplos: Linguagem, leitura e escrita, conceitos de
-                                dinheiro, autodirecionamento, estabelecer a relação significado – significante de modo
-                                que o estudante agregue em seu vocabulário novas palavras noções e conceitos; estimular
-                                a percepção visual; psicomotricidade; lateralidade; orientação espaço temporal;
-                                Letramento matemático (Conceituais); interação social, responsabilidade, autoestima,
-                                seguir regras etc. (Sociais), atividades da vida diária, atividades instrumentais da
-                                vida diária – preparar refeições, cuidar da casa, tomar remédios etc. Habilidades
-                                ocupacionais, desenvolver atividades de orientação e mobilidade (Práticas). </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONCEITUAIS: <span class="verm">Pré-requisito o aluno sabe usar dicionário, sabe ler,
-                                    escrever, usar dinheiro, quais conceitos e pré-requisitos foram adquiridos pelo
-                                    estudante ao longo do processo etc. </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>SOCIAIS: <span class="verm">Pré-requisito o aluno tem facilidade com trabalhos em grupo,
-                                    em dupla, participa de seminário, apresentações, dinâmicas, esporte coletivo etc.
-                                </span> <textarea id="observacoes" name="observacoes" rows="5" cols="175"
-                                    maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONSEQUÊNCIAS OU DECORRÊNCIAS DA AÇÃO DO ESTUDANTE: <span class="verm">Que resultados
-                                    produz para si mesmo? Que resultados produz no meio físico? Que resultados produz no
-                                    meio social? Que resultados produz a curto prazo, médio e longo prazo? </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="100px" text-align="up">ASSINATURA DO PROFESSOR DO COMPONENTE CURRICULAR:</td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <h3>INFORMAÇÕES GERAIS DO COMPONENTE CURRICULAR:
-                    <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="arte">ARTE</option>
-                        <option value="port">PORTUGUÊS</option>
-                    </select>
-                    PROFESSOR: <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="Adbel">Adbel Pereira dos Santos</option>
-                        <option value="Juliane">Juliane de Souza Silva</option>
-                    </select>
-                    MATRÍCULA: <input type="number" name="matricula" placeholder="Digite sua matrícula">
-                </h3>
-                <br>
-                <table>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS PRIORIZADOS NO SEMESTRE: <span class="verm">(comportamentos,
-                                    habilidades/competências e saberes que o professor deseja que o estudante desenvolva
-                                    com o término da disciplina.)</span> <textarea id="observacoes" name="observacoes"
-                                    rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS DA DISCIPLINA AO TÉRMINO DO ANO LETIVO: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS ESPECÍFICOS DA DISCIPLINA: <span class="verm">(intermediários e pequenos para
-                                    alcançarem os pré-requisitos não que estão em processo de aprendizagem) </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONTEÚDOS PRIORIZADOS NO SEMESTRE/ SABERES A SEREM CONSTRUÍDOS: <textarea
-                                    id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>METODOLOGIAS ESPECÍFICAS: <span class="verm">(condições de ensino que serão criadas para
-                                    desenvolver os objetivos/conteúdos) </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>AVALIAÇÃO: <span class="verm">(processos avaliativos que visam estabelecer parâmetros de
-                                    revisão e/ou promoção dos objetivos) </span> </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas dos Projetos Globais: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas específicas da disciplina: <span class="verm">(intermediários e
-                                    pequenos para alcançarem os pré-requisitos não que estão em processo de
-                                    aprendizagem) </span> <textarea id="observacoes" name="observacoes" rows="5"
-                                    cols="175" maxlength="200" placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                </table> <br>
-                <table>
-                    <tr>
-                        <td style="text-align: justify; font-size: 14pt; background-color: #e6ae6f;">
-                            <p>HABILIDADES BIOPSICOSSOCIAIS: <span class="vermama">(PROFESSOR CONSELHEIRO RESPONDE)
-                                </span></p>
-                            <p>Envolve as habilidades conceituais, sociais e práticas adquiridas pelas pessoas para
-                                funcionarem em suas vidas diárias. Exemplos: Linguagem, leitura e escrita, conceitos de
-                                dinheiro, autodirecionamento, estabelecer a relação significado – significante de modo
-                                que o estudante agregue em seu vocabulário novas palavras noções e conceitos; estimular
-                                a percepção visual; psicomotricidade; lateralidade; orientação espaço temporal;
-                                Letramento matemático (Conceituais); interação social, responsabilidade, autoestima,
-                                seguir regras etc. (Sociais), atividades da vida diária, atividades instrumentais da
-                                vida diária – preparar refeições, cuidar da casa, tomar remédios etc. Habilidades
-                                ocupacionais, desenvolver atividades de orientação e mobilidade (Práticas). </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONCEITUAIS: <span class="verm">Pré-requisito o aluno sabe usar dicionário, sabe ler,
-                                    escrever, usar dinheiro, quais conceitos e pré-requisitos foram adquiridos pelo
-                                    estudante ao longo do processo etc. </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>SOCIAIS: <span class="verm">Pré-requisito o aluno tem facilidade com trabalhos em grupo,
-                                    em dupla, participa de seminário, apresentações, dinâmicas, esporte coletivo etc.
-                                </span> <textarea id="observacoes" name="observacoes" rows="5" cols="175"
-                                    maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONSEQUÊNCIAS OU DECORRÊNCIAS DA AÇÃO DO ESTUDANTE: <span class="verm">Que resultados
-                                    produz para si mesmo? Que resultados produz no meio físico? Que resultados produz no
-                                    meio social? Que resultados produz a curto prazo, médio e longo prazo? </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="100px" text-align="up">ASSINATURA DO PROFESSOR DO COMPONENTE CURRICULAR: </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <h3>INFORMAÇÕES GERAIS DO COMPONENTE CURRICULAR:
-                    <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="arte">ARTE</option>
-                        <option value="port">PORTUGUÊS</option>
-                        <option value="reda">REDAÇÃO</option>
-                    </select>
-                    PROFESSOR: <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="Adbel">Adbel Pereira dos Santos</option>
-                        <option value="Juliane">Juliane de Souza Silva</option>
-                        <option value="Camila">Camila Brotto Fische</option>
-                    </select>
-                    MATRÍCULA: <input type="number" name="matricula" placeholder="Digite sua matrícula">
-                </h3>
-                <br>
-                <table>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS PRIORIZADOS NO SEMESTRE: <span class="verm">(comportamentos,
-                                    habilidades/competências e saberes que o professor deseja que o estudante desenvolva
-                                    com o término da disciplina.)</span> <textarea id="observacoes" name="observacoes"
-                                    rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS DA DISCIPLINA AO TÉRMINO DO ANO LETIVO: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS ESPECÍFICOS DA DISCIPLINA: <span class="verm">(intermediários e pequenos para
-                                    alcançarem os pré-requisitos não que estão em processo de aprendizagem) </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONTEÚDOS PRIORIZADOS NO SEMESTRE/ SABERES A SEREM CONSTRUÍDOS: <textarea
-                                    id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>METODOLOGIAS ESPECÍFICAS: <span class="verm">(condições de ensino que serão criadas para
-                                    desenvolver os objetivos/conteúdos) </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>AVALIAÇÃO: <span class="verm">(processos avaliativos que visam estabelecer parâmetros de
-                                    revisão e/ou promoção dos objetivos) </span> </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas dos Projetos Globais: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas específicas da disciplina: <span class="verm">(intermediários e
-                                    pequenos para alcançarem os pré-requisitos não que estão em processo de
-                                    aprendizagem) </span> <textarea id="observacoes" name="observacoes" rows="5"
-                                    cols="175" maxlength="200" placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                </table> <br>
-                <table>
-                    <tr>
-                        <td style="text-align: justify; font-size: 14pt; background-color: #e6ae6f;">
-                            <p>HABILIDADES BIOPSICOSSOCIAIS: <span class="vermama">(PROFESSOR CONSELHEIRO RESPONDE)
-                                </span></p>
-                            <p>Envolve as habilidades conceituais, sociais e práticas adquiridas pelas pessoas para
-                                funcionarem em suas vidas diárias. Exemplos: Linguagem, leitura e escrita, conceitos de
-                                dinheiro, autodirecionamento, estabelecer a relação significado – significante de modo
-                                que o estudante agregue em seu vocabulário novas palavras noções e conceitos; estimular
-                                a percepção visual; psicomotricidade; lateralidade; orientação espaço temporal;
-                                Letramento matemático (Conceituais); interação social, responsabilidade, autoestima,
-                                seguir regras etc. (Sociais), atividades da vida diária, atividades instrumentais da
-                                vida diária – preparar refeições, cuidar da casa, tomar remédios etc. Habilidades
-                                ocupacionais, desenvolver atividades de orientação e mobilidade (Práticas). </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONCEITUAIS: <span class="verm">Pré-requisito o aluno sabe usar dicionário, sabe ler,
-                                    escrever, usar dinheiro, quais conceitos e pré-requisitos foram adquiridos pelo
-                                    estudante ao longo do processo etc. </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>SOCIAIS: <span class="verm">Pré-requisito o aluno tem facilidade com trabalhos em grupo,
-                                    em dupla, participa de seminário, apresentações, dinâmicas, esporte coletivo etc.
-                                </span> <textarea id="observacoes" name="observacoes" rows="5" cols="175"
-                                    maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONSEQUÊNCIAS OU DECORRÊNCIAS DA AÇÃO DO ESTUDANTE: <span class="verm">Que resultados
-                                    produz para si mesmo? Que resultados produz no meio físico? Que resultados produz no
-                                    meio social? Que resultados produz a curto prazo, médio e longo prazo? </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="100px" text-align="up">ASSINATURA DO PROFESSOR DO COMPONENTE CURRICULAR: </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <h3>INFORMAÇÕES GERAIS DO COMPONENTE CURRICULAR:
-                    <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="arte">ARTE</option>
-                        <option value="port">PORTUGUÊS</option>
-                        <option value="reda">REDAÇÃO</option>
-                        <option value="mat1">MATEMÁTICA 1</option>
-                    </select>
-                    PROFESSOR: <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="Adbel">Adbel Pereira dos Santos</option>
-                        <option value="Juliane">Juliane de Souza Silva</option>
-                        <option value="Camila">Camila Brotto Fische</option>
-                        <option value="Edu">Edu Silva de Mesquita</option>
-                    </select>
-                    MATRÍCULA: <input type="number" name="matricula" placeholder="Digite sua matrícula">
-                </h3>
-                <br>
-                <table>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS PRIORIZADOS NO SEMESTRE: <span class="verm">(comportamentos,
-                                    habilidades/competências e saberes que o professor deseja que o estudante desenvolva
-                                    com o término da disciplina.)</span> <textarea id="observacoes" name="observacoes"
-                                    rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS DA DISCIPLINA AO TÉRMINO DO ANO LETIVO: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS ESPECÍFICOS DA DISCIPLINA: <span class="verm">(intermediários e pequenos para
-                                    alcançarem os pré-requisitos não que estão em processo de aprendizagem) </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONTEÚDOS PRIORIZADOS NO SEMESTRE/ SABERES A SEREM CONSTRUÍDOS: <textarea
-                                    id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>METODOLOGIAS ESPECÍFICAS: <span class="verm">(condições de ensino que serão criadas para
-                                    desenvolver os objetivos/conteúdos) </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>AVALIAÇÃO: <span class="verm">(processos avaliativos que visam estabelecer parâmetros de
-                                    revisão e/ou promoção dos objetivos) </span> </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas dos Projetos Globais: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas específicas da disciplina: <span class="verm">(intermediários e
-                                    pequenos para alcançarem os pré-requisitos não que estão em processo de
-                                    aprendizagem) </span> <textarea id="observacoes" name="observacoes" rows="5"
-                                    cols="175" maxlength="200" placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                </table> <br>
-                <table>
-                    <tr>
-                        <td style="text-align: justify; font-size: 14pt; background-color: #e6ae6f;">
-                            <p>HABILIDADES BIOPSICOSSOCIAIS: <span class="vermama">(PROFESSOR CONSELHEIRO RESPONDE)
-                                </span></p>
-                            <p>Envolve as habilidades conceituais, sociais e práticas adquiridas pelas pessoas para
-                                funcionarem em suas vidas diárias. Exemplos: Linguagem, leitura e escrita, conceitos de
-                                dinheiro, autodirecionamento, estabelecer a relação significado – significante de modo
-                                que o estudante agregue em seu vocabulário novas palavras noções e conceitos; estimular
-                                a percepção visual; psicomotricidade; lateralidade; orientação espaço temporal;
-                                Letramento matemático (Conceituais); interação social, responsabilidade, autoestima,
-                                seguir regras etc. (Sociais), atividades da vida diária, atividades instrumentais da
-                                vida diária – preparar refeições, cuidar da casa, tomar remédios etc. Habilidades
-                                ocupacionais, desenvolver atividades de orientação e mobilidade (Práticas). </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONCEITUAIS: <span class="verm">Pré-requisito o aluno sabe usar dicionário, sabe ler,
-                                    escrever, usar dinheiro, quais conceitos e pré-requisitos foram adquiridos pelo
-                                    estudante ao longo do processo etc. </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>SOCIAIS: <span class="verm">Pré-requisito o aluno tem facilidade com trabalhos em grupo,
-                                    em dupla, participa de seminário, apresentações, dinâmicas, esporte coletivo etc.
-                                </span> <textarea id="observacoes" name="observacoes" rows="5" cols="175"
-                                    maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONSEQUÊNCIAS OU DECORRÊNCIAS DA AÇÃO DO ESTUDANTE: <span class="verm">Que resultados
-                                    produz para si mesmo? Que resultados produz no meio físico? Que resultados produz no
-                                    meio social? Que resultados produz a curto prazo, médio e longo prazo? </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="100px" text-align="up">ASSINATURA DO PROFESSOR DO COMPONENTE CURRICULAR: </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <h3>INFORMAÇÕES GERAIS DO COMPONENTE CURRICULAR:
-                    <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="arte">ARTE</option>
-                        <option value="port">PORTUGUÊS</option>
-                        <option value="reda">REDAÇÃO</option>
-                        <option value="mat1">MATEMÁTICA 1</option>
-                        <option value="mat2">MATEMÁTICA 2</option>
-                    </select>
-                    PROFESSOR: <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="Adbel">Adbel Pereira dos Santos</option>
-                        <option value="Juliane">Juliane de Souza Silva</option>
-                        <option value="Camila">Camila Brotto Fische</option>
-                        <option value="Edu">Edu Silva de Mesquita</option>
-                        <option value="Elves">Elves Ferreira da Costa</option>
-                    </select>
-                    MATRÍCULA: <input type="number" name="matricula" placeholder="Digite sua matrícula">
-                </h3>
-                <br>
-                <table>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS PRIORIZADOS NO SEMESTRE: <span class="verm">(comportamentos,
-                                    habilidades/competências e saberes que o professor deseja que o estudante desenvolva
-                                    com o término da disciplina.)</span> <textarea id="observacoes" name="observacoes"
-                                    rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS DA DISCIPLINA AO TÉRMINO DO ANO LETIVO: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS ESPECÍFICOS DA DISCIPLINA: <span class="verm">(intermediários e pequenos para
-                                    alcançarem os pré-requisitos não que estão em processo de aprendizagem) </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONTEÚDOS PRIORIZADOS NO SEMESTRE/ SABERES A SEREM CONSTRUÍDOS: <textarea
-                                    id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>METODOLOGIAS ESPECÍFICAS: <span class="verm">(condições de ensino que serão criadas para
-                                    desenvolver os objetivos/conteúdos) </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>AVALIAÇÃO: <span class="verm">(processos avaliativos que visam estabelecer parâmetros de
-                                    revisão e/ou promoção dos objetivos) </span> </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas dos Projetos Globais: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas específicas da disciplina: <span class="verm">(intermediários e
-                                    pequenos para alcançarem os pré-requisitos não que estão em processo de
-                                    aprendizagem) </span> <textarea id="observacoes" name="observacoes" rows="5"
-                                    cols="175" maxlength="200" placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                </table> <br>
-                <table>
-                    <tr>
-                        <td style="text-align: justify; font-size: 14pt; background-color: #e6ae6f;">
-                            <p>HABILIDADES BIOPSICOSSOCIAIS: <span class="vermama">(PROFESSOR CONSELHEIRO RESPONDE)
-                                </span></p>
-                            <p>Envolve as habilidades conceituais, sociais e práticas adquiridas pelas pessoas para
-                                funcionarem em suas vidas diárias. Exemplos: Linguagem, leitura e escrita, conceitos de
-                                dinheiro, autodirecionamento, estabelecer a relação significado – significante de modo
-                                que o estudante agregue em seu vocabulário novas palavras noções e conceitos; estimular
-                                a percepção visual; psicomotricidade; lateralidade; orientação espaço temporal;
-                                Letramento matemático (Conceituais); interação social, responsabilidade, autoestima,
-                                seguir regras etc. (Sociais), atividades da vida diária, atividades instrumentais da
-                                vida diária – preparar refeições, cuidar da casa, tomar remédios etc. Habilidades
-                                ocupacionais, desenvolver atividades de orientação e mobilidade (Práticas). </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONCEITUAIS: <span class="verm">Pré-requisito o aluno sabe usar dicionário, sabe ler,
-                                    escrever, usar dinheiro, quais conceitos e pré-requisitos foram adquiridos pelo
-                                    estudante ao longo do processo etc. </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>SOCIAIS: <span class="verm">Pré-requisito o aluno tem facilidade com trabalhos em grupo,
-                                    em dupla, participa de seminário, apresentações, dinâmicas, esporte coletivo etc.
-                                </span> <textarea id="observacoes" name="observacoes" rows="5" cols="175"
-                                    maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONSEQUÊNCIAS OU DECORRÊNCIAS DA AÇÃO DO ESTUDANTE: <span class="verm">Que resultados
-                                    produz para si mesmo? Que resultados produz no meio físico? Que resultados produz no
-                                    meio social? Que resultados produz a curto prazo, médio e longo prazo? </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="100px" text-align="up">ASSINATURA DO PROFESSOR DO COMPONENTE CURRICULAR: </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <h3>INFORMAÇÕES GERAIS DO COMPONENTE CURRICULAR:
-                    <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="arte">ARTE</option>
-                        <option value="port">PORTUGUÊS</option>
-                        <option value="reda">REDAÇÃO</option>
-                        <option value="mat1">MATEMÁTICA 1</option>
-                        <option value="mat2">MATEMÁTICA 2</option>
-                        <option value="bio">BIOLOGIA</option>
-                    </select>
-                    PROFESSOR: <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="Adbel">Adbel Pereira dos Santos</option>
-                        <option value="Juliane">Juliane de Souza Silva</option>
-                        <option value="Camila">Camila Brotto Fische</option>
-                        <option value="Edu">Edu Silva de Mesquita</option>
-                        <option value="Elves">Elves Ferreira da Costa</option>
-                        <option value="Sik">Sikandra - Lis Fonseca Paulinelli G. Silveira</option>
-                    </select>
-                    MATRÍCULA: <input type="number" name="matricula" placeholder="Digite sua matrícula">
-                </h3>
-                <br>
-                <table>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS PRIORIZADOS NO SEMESTRE: <span class="verm">(comportamentos,
-                                    habilidades/competências e saberes que o professor deseja que o estudante desenvolva
-                                    com o término da disciplina.)</span> <textarea id="observacoes" name="observacoes"
-                                    rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS DA DISCIPLINA AO TÉRMINO DO ANO LETIVO: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS ESPECÍFICOS DA DISCIPLINA: <span class="verm">(intermediários e pequenos para
-                                    alcançarem os pré-requisitos não que estão em processo de aprendizagem) </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONTEÚDOS PRIORIZADOS NO SEMESTRE/ SABERES A SEREM CONSTRUÍDOS: <textarea
-                                    id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>METODOLOGIAS ESPECÍFICAS: <span class="verm">(condições de ensino que serão criadas para
-                                    desenvolver os objetivos/conteúdos) </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>AVALIAÇÃO: <span class="verm">(processos avaliativos que visam estabelecer parâmetros de
-                                    revisão e/ou promoção dos objetivos) </span> </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas dos Projetos Globais: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas específicas da disciplina: <span class="verm">(intermediários e
-                                    pequenos para alcançarem os pré-requisitos não que estão em processo de
-                                    aprendizagem) </span> <textarea id="observacoes" name="observacoes" rows="5"
-                                    cols="175" maxlength="200" placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                </table> <br>
-                <table>
-                    <tr>
-                        <td style="text-align: justify; font-size: 14pt; background-color: #e6ae6f;">
-                            <p>HABILIDADES BIOPSICOSSOCIAIS: <span class="vermama">(PROFESSOR CONSELHEIRO RESPONDE)
-                                </span></p>
-                            <p>Envolve as habilidades conceituais, sociais e práticas adquiridas pelas pessoas para
-                                funcionarem em suas vidas diárias. Exemplos: Linguagem, leitura e escrita, conceitos de
-                                dinheiro, autodirecionamento, estabelecer a relação significado – significante de modo
-                                que o estudante agregue em seu vocabulário novas palavras noções e conceitos; estimular
-                                a percepção visual; psicomotricidade; lateralidade; orientação espaço temporal;
-                                Letramento matemático (Conceituais); interação social, responsabilidade, autoestima,
-                                seguir regras etc. (Sociais), atividades da vida diária, atividades instrumentais da
-                                vida diária – preparar refeições, cuidar da casa, tomar remédios etc. Habilidades
-                                ocupacionais, desenvolver atividades de orientação e mobilidade (Práticas). </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONCEITUAIS: <span class="verm">Pré-requisito o aluno sabe usar dicionário, sabe ler,
-                                    escrever, usar dinheiro, quais conceitos e pré-requisitos foram adquiridos pelo
-                                    estudante ao longo do processo etc. </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>SOCIAIS: <span class="verm">Pré-requisito o aluno tem facilidade com trabalhos em grupo,
-                                    em dupla, participa de seminário, apresentações, dinâmicas, esporte coletivo etc.
-                                </span> <textarea id="observacoes" name="observacoes" rows="5" cols="175"
-                                    maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONSEQUÊNCIAS OU DECORRÊNCIAS DA AÇÃO DO ESTUDANTE: <span class="verm">Que resultados
-                                    produz para si mesmo? Que resultados produz no meio físico? Que resultados produz no
-                                    meio social? Que resultados produz a curto prazo, médio e longo prazo? </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="100px" text-align="up">ASSINATURA DO PROFESSOR DO COMPONENTE CURRICULAR: </td>
-                    </tr>
-                </table>
-            </div>
+<template id="templateDiv">
+    <div class="componente">
+        <h3>INFORMAÇÕES GERAIS DO COMPONENTE CURRICULAR:
+            <select id="coletivo" name="coletivo" style="width: 200px;">
+                <option value="vazio"></option>
+                <option value="arte">ARTE</option>
+                <option value="biologia">BIOLOGIA</option>
+                <option value="ciencias">CIÊNCIAS</option>
+                <option value="edfisica">ED. FÍSICA</option>
+                <option value="filosofia">FILOSOFIA</option>
+                <option value="fisica">FÍSICA</option>
+                <option value="iformativo">I. FORMATIVO</option>
+                <option value="geografia">GEOGRAFIA</option>
+                <option value="historia">HISTÓRIA</option>
+                <option value="linglesa">L. INGLESA</option>
+                <option value="lportuguesa">L. PORTUGUESA</option>
+                <option value="matematica">MATEMÁTICA</option>
+                <option value="quimica">QUÍMICA</option>
+                <option value="redacao">REDAÇÃO</option>
+                <option value="sociologia">SOCIOLOGIA</option>
+                <option value="pc">P. C.</option>
+            </select>
+            <br>
+            PROFESSOR: <select id="professor" name="professor" style="width: 500px;">
+                <option value="vazio"></option>
+                <option value="Adbel">Adbel Pereira dos Santos</option>
+                <option value="Alejandra">Alejandra Victoria Trindade Rabelo</option>
+                <option value="Camila">Camila Brotto Fischer</option>
+                <option value="Edu">Edu Silva de Mesquita</option>
+                <option value="Elves">Elves Ferreira da Costa</option>
+                <option value="Everton">Everton de Moura Guedes</option>
+                <option value="Fabio">Fabio Fonseca</option>
+                <option value="Leticia">Letícia Helena de Oliveira Rondon</option>
+                <option value="Marcos">Marcos Antônio de Oliveira Dias</option>
+                <option value="Nicholas">Nicholas Santos Pires Lima</option>
+                <option value="Riquelle">Riquelle Magalhães Silva</option>
+                <option value="Sikandra">Sikandra - Lis Fonseca Paulinelli Garcia Silveira</option>
+                <option value="Victor">Victor Maciel Simões</option>
+            </select>
+            <br>
+            MATRÍCULA: <input type="number" name="matricula" style="width: 100px;">
+        </h3>
+        <button onclick="removerDiv(this)">Remover</button>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <p>OBJETIVOS PRIORIZADOS NO SEMESTRE: <textarea name="objetivos_priorizados" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>OBJETIVOS DA DISCIPLINA AO TÉRMINO DO ANO LETIVO: <textarea name="objetivos_ano" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>OBJETIVOS ESPECÍFICOS DA DISCIPLINA: <textarea name="objetivos_especificos" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>CONTEÚDOS PRIORIZADOS NO SEMESTRE: <textarea name="conteudos_priorizados" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>METODOLOGIAS ESPECÍFICAS: <textarea name="metodologias" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>AVALIAÇÃO: <textarea name="avaliacao" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Atividades avaliativas específicas da disciplina: <textarea name="atividades_especificas" rows="5" maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</template>
 
-            <div>
-                <h3>INFORMAÇÕES GERAIS DO COMPONENTE CURRICULAR:
-                    <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="arte">ARTE</option>
-                        <option value="port">PORTUGUÊS</option>
-                        <option value="reda">REDAÇÃO</option>
-                        <option value="mat1">MATEMÁTICA 1</option>
-                        <option value="mat2">MATEMÁTICA 2</option>
-                        <option value="bio">BIOLOGIA</option>
-                        <option value="qui">QUÍMICA</option>
-                    </select>
-                    PROFESSOR: <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="Adbel">Adbel Pereira dos Santos</option>
-                        <option value="Juliane">Juliane de Souza Silva</option>
-                        <option value="Camila">Camila Brotto Fische</option>
-                        <option value="Edu">Edu Silva de Mesquita</option>
-                        <option value="Elves">Elves Ferreira da Costa</option>
-                        <option value="Sik">Sikandra - Lis Fonseca Paulinelli G. Silveira</option>
-                        <option value="Tiago">Tiago de Almeida Diniz</option>
-                    </select>
-                    MATRÍCULA: <input type="number" name="matricula" placeholder="Digite sua matrícula">
-                </h3>
-                <br>
-                <table>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS PRIORIZADOS NO SEMESTRE: <span class="verm">(comportamentos,
-                                    habilidades/competências e saberes que o professor deseja que o estudante desenvolva
-                                    com o término da disciplina.)</span> <textarea id="observacoes" name="observacoes"
-                                    rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS DA DISCIPLINA AO TÉRMINO DO ANO LETIVO: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS ESPECÍFICOS DA DISCIPLINA: <span class="verm">(intermediários e pequenos para
-                                    alcançarem os pré-requisitos não que estão em processo de aprendizagem) </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONTEÚDOS PRIORIZADOS NO SEMESTRE/ SABERES A SEREM CONSTRUÍDOS: <textarea
-                                    id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>METODOLOGIAS ESPECÍFICAS: <span class="verm">(condições de ensino que serão criadas para
-                                    desenvolver os objetivos/conteúdos) </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>AVALIAÇÃO: <span class="verm">(processos avaliativos que visam estabelecer parâmetros de
-                                    revisão e/ou promoção dos objetivos) </span> </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas dos Projetos Globais: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas específicas da disciplina: <span class="verm">(intermediários e
-                                    pequenos para alcançarem os pré-requisitos não que estão em processo de
-                                    aprendizagem) </span> <textarea id="observacoes" name="observacoes" rows="5"
-                                    cols="175" maxlength="200" placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                </table> <br>
-                <table>
-                    <tr>
-                        <td style="text-align: justify; font-size: 14pt; background-color: #e6ae6f;">
-                            <p>HABILIDADES BIOPSICOSSOCIAIS: <span class="vermama">(PROFESSOR CONSELHEIRO RESPONDE)
-                                </span></p>
-                            <p>Envolve as habilidades conceituais, sociais e práticas adquiridas pelas pessoas para
-                                funcionarem em suas vidas diárias. Exemplos: Linguagem, leitura e escrita, conceitos de
-                                dinheiro, autodirecionamento, estabelecer a relação significado – significante de modo
-                                que o estudante agregue em seu vocabulário novas palavras noções e conceitos; estimular
-                                a percepção visual; psicomotricidade; lateralidade; orientação espaço temporal;
-                                Letramento matemático (Conceituais); interação social, responsabilidade, autoestima,
-                                seguir regras etc. (Sociais), atividades da vida diária, atividades instrumentais da
-                                vida diária – preparar refeições, cuidar da casa, tomar remédios etc. Habilidades
-                                ocupacionais, desenvolver atividades de orientação e mobilidade (Práticas). </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONCEITUAIS: <span class="verm">Pré-requisito o aluno sabe usar dicionário, sabe ler,
-                                    escrever, usar dinheiro, quais conceitos e pré-requisitos foram adquiridos pelo
-                                    estudante ao longo do processo etc. </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>SOCIAIS: <span class="verm">Pré-requisito o aluno tem facilidade com trabalhos em grupo,
-                                    em dupla, participa de seminário, apresentações, dinâmicas, esporte coletivo etc.
-                                </span> <textarea id="observacoes" name="observacoes" rows="5" cols="175"
-                                    maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONSEQUÊNCIAS OU DECORRÊNCIAS DA AÇÃO DO ESTUDANTE: <span class="verm">Que resultados
-                                    produz para si mesmo? Que resultados produz no meio físico? Que resultados produz no
-                                    meio social? Que resultados produz a curto prazo, médio e longo prazo? </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="100px" text-align="up">ASSINATURA DO PROFESSOR DO COMPONENTE CURRICULAR: </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <h3>INFORMAÇÕES GERAIS DO COMPONENTE CURRICULAR:
-                    <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="arte">ARTE</option>
-                        <option value="port">PORTUGUÊS</option>
-                        <option value="reda">REDAÇÃO</option>
-                        <option value="mat1">MATEMÁTICA 1</option>
-                        <option value="mat2">MATEMÁTICA 2</option>
-                        <option value="bio">BIOLOGIA</option>
-                        <option value="qui">QUÍMICA</option>
-                        <option value="fis">FÍSICA</option>
-                    </select>
-                    PROFESSOR: <select id="coletivo" name="coletivo">
-                        <option value="vazio"></option>
-                        <option value="Adbel">Adbel Pereira dos Santos</option>
-                        <option value="Juliane">Juliane de Souza Silva</option>
-                        <option value="Camila">Camila Brotto Fische</option>
-                        <option value="Edu">Edu Silva de Mesquita</option>
-                        <option value="Elves">Elves Ferreira da Costa</option>
-                        <option value="Sik">Sikandra - Lis Fonseca Paulinelli G. Silveira</option>
-                        <option value="Tiago">Tiago de Almeida Diniz</option>
-                    </select>
-                    MATRÍCULA: <input type="number" name="matricula" placeholder="Digite sua matrícula">
-                </h3>
-                <br>
-                <table>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS PRIORIZADOS NO SEMESTRE: <span class="verm">(comportamentos,
-                                    habilidades/competências e saberes que o professor deseja que o estudante desenvolva
-                                    com o término da disciplina.)</span> <textarea id="observacoes" name="observacoes"
-                                    rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS DA DISCIPLINA AO TÉRMINO DO ANO LETIVO: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>OBJETIVOS ESPECÍFICOS DA DISCIPLINA: <span class="verm">(intermediários e pequenos para
-                                    alcançarem os pré-requisitos não que estão em processo de aprendizagem) </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONTEÚDOS PRIORIZADOS NO SEMESTRE/ SABERES A SEREM CONSTRUÍDOS: <textarea
-                                    id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>METODOLOGIAS ESPECÍFICAS: <span class="verm">(condições de ensino que serão criadas para
-                                    desenvolver os objetivos/conteúdos) </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>AVALIAÇÃO: <span class="verm">(processos avaliativos que visam estabelecer parâmetros de
-                                    revisão e/ou promoção dos objetivos) </span> </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas dos Projetos Globais: <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Atividades avaliativas específicas da disciplina: <span class="verm">(intermediários e
-                                    pequenos para alcançarem os pré-requisitos não que estão em processo de
-                                    aprendizagem) </span> <textarea id="observacoes" name="observacoes" rows="5"
-                                    cols="175" maxlength="200" placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                </table> <br>
-                <table>
-                    <tr>
-                        <td style="text-align: justify; font-size: 14pt; background-color: #e6ae6f;">
-                            <p>HABILIDADES BIOPSICOSSOCIAIS: <span class="vermama">(PROFESSOR CONSELHEIRO RESPONDE)
-                                </span></p>
-                            <p>Envolve as habilidades conceituais, sociais e práticas adquiridas pelas pessoas para
-                                funcionarem em suas vidas diárias. Exemplos: Linguagem, leitura e escrita, conceitos de
-                                dinheiro, autodirecionamento, estabelecer a relação significado – significante de modo
-                                que o estudante agregue em seu vocabulário novas palavras noções e conceitos; estimular
-                                a percepção visual; psicomotricidade; lateralidade; orientação espaço temporal;
-                                Letramento matemático (Conceituais); interação social, responsabilidade, autoestima,
-                                seguir regras etc. (Sociais), atividades da vida diária, atividades instrumentais da
-                                vida diária – preparar refeições, cuidar da casa, tomar remédios etc. Habilidades
-                                ocupacionais, desenvolver atividades de orientação e mobilidade (Práticas). </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONCEITUAIS: <span class="verm">Pré-requisito o aluno sabe usar dicionário, sabe ler,
-                                    escrever, usar dinheiro, quais conceitos e pré-requisitos foram adquiridos pelo
-                                    estudante ao longo do processo etc. </span> <textarea id="observacoes"
-                                    name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>SOCIAIS: <span class="verm">Pré-requisito o aluno tem facilidade com trabalhos em grupo,
-                                    em dupla, participa de seminário, apresentações, dinâmicas, esporte coletivo etc.
-                                </span> <textarea id="observacoes" name="observacoes" rows="5" cols="175"
-                                    maxlength="200" placeholder="Digite suas observações aqui..."></textarea></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CONSEQUÊNCIAS OU DECORRÊNCIAS DA AÇÃO DO ESTUDANTE: <span class="verm">Que resultados
-                                    produz para si mesmo? Que resultados produz no meio físico? Que resultados produz no
-                                    meio social? Que resultados produz a curto prazo, médio e longo prazo? </span>
-                                <textarea id="observacoes" name="observacoes" rows="5" cols="175" maxlength="200"
-                                    placeholder="Digite suas observações aqui..."></textarea>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="100px" text-align="up">ASSINATURA DO PROFESSOR DO COMPONENTE CURRICULAR: </td>
-                    </tr>
-                </table>
-            </div>
+            <!-- Adicione o botão de impressão -->
             <button id="print-button" onclick="printDocument()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -1955,10 +1081,19 @@
                 </svg>
                 Imprimir PDF
             </button>
-            <script src="print.js"></script>
+
+            <!-- Resto do seu HTML atual -->
+
+
+
         </main>
     </div>
-    <script src="script.js"></script>
-    <script src="modalidade.js"></script>
+    <script src="/profissional.js"></script>
+    <script src="/print.js"></script>
+    <script src="/script.js"></script>
+    <script src="/modalidade.js"></script>
+    <script src="/laudo.js"></script>
+    <script src="/add.js"></script>
 </body>
+
 </html>
